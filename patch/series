@@ -111,6 +111,7 @@ net-sch_generic-fix-the-missing-new-qdisc-assignment.patch
 0061-hwmon-pmbus-Add-support-for-MPS-Multi-phase-mp2888-c.patch
 0062-i2c-mlxcpld-Fix-criteria-for-frequency-setting.patch
 0063-i2c-mlxcpld-Reduce-polling-time-for-performance-impr.patch
+0064-mlxsw-i2c-Prevent-transaction-execution-for.patch
 ############################################################
 #
 # Internal patches will be added below (placeholder)
