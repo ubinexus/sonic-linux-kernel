@@ -14,6 +14,10 @@ CONFIG_MLXSW_PCI
 
 [arm64]
 
+[marvell-arm64]
+CONFIG_UBIFS_FS_ZSTD
+CONFIG_CRYPTO_DEV_SAFEXCEL
+
 [armhf]
 
 [marvell-armhf]
