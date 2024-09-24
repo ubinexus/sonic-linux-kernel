@@ -218,6 +218,9 @@ armhf_secondary_boot_online.patch
 0019-dt-bindings-marvell-Add-ARMADA-7K-properties.patch
 0020-dts-marvell-Add-support-for-7020-comexpress.patch
 
+# Ubinexus patches for 5.10 kernel
+0001-support-seg6-dt4-dt46.patch
+
 #
 #
 ############################################################
