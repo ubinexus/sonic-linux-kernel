@@ -1,0 +1,22 @@
+commit de8d45e0fddd3b003ace0dfba2e08736dfb9c29a
+Author: centecqianj <qianj@centec.com>
+Date:   Wed Oct 16 15:58:58 2024 +0800
+
+    fix sd erase bug
+
+diff --git a/drivers/mmc/host/phytium-sdci.c b/drivers/mmc/host/phytium-sdci.c
+index b4ca402c1..6be382dba 100755
+--- a/drivers/mmc/host/phytium-sdci.c
++++ b/drivers/mmc/host/phytium-sdci.c
+@@ -452,6 +452,11 @@ static void phytium_sdci_request_done(struct phytium_sdci_host *host,
+ 	phytium_sdci_track_cmd_data(host, mrq->cmd, mrq->data);
+ 	if (mrq->data)
+ 		phytium_sdci_unprepare_data(host, mrq);
++	/*bypass the error when sd do mmc erase*/
++	if (mrq->cmd->opcode == MMC_ERASE)
++	{
++		mdelay(20);
++	}
+ 	mmc_request_done(host->mmc, mrq);
+ }
+ 

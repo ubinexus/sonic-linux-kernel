@@ -222,17 +222,6 @@ armhf_secondary_boot_online.patch
 0001-support-seg6-dt4-dt46.patch
 
 #
-# phytium-d2000 platform patches for 5.10
-0001-add-stmmac-phytium-v2.1.patch 
-0003-add-arch-phytium-kconfig-v2.1.patch
-0004-add-phy-v2.1.patch
-0005-add-spi-qspi-phytium-v2.1.patch
-0006-add-spi-config-boya.patch
-0007-add-phy-define.patch
-0008-phytium-patch_mmc-v5.10.209.patch
-0009-fix-sd-erase-bug.patch
-0010-phytium-d2k-gpio.patch
-#
 #
 ############################################################
 #
