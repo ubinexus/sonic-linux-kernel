@@ -232,6 +232,7 @@ armhf_secondary_boot_online.patch
 0008-phytium-patch_mmc-v5.10.209.patch
 0009-fix-sd-erase-bug.patch
 0010-phytium-d2k-gpio.patch
+0011-spansion-add-s25hs01gt.patch
 #
 #
 ############################################################

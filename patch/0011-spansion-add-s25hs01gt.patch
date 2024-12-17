@@ -1,0 +1,13 @@
+diff --git a/drivers/mtd/spi-nor/spansion.c b/drivers/mtd/spi-nor/spansion.c
+index 8429b4af9..878071b51 100644
+--- a/drivers/mtd/spi-nor/spansion.c
++++ b/drivers/mtd/spi-nor/spansion.c
+@@ -104,6 +104,8 @@ static const struct flash_info spansion_parts[] = {
+ 			     SPI_NOR_4B_OPCODES) },
+ 	{ "cy15x104q",  INFO6(0x042cc2, 0x7f7f7f, 512 * 1024, 1,
+ 			      SPI_NOR_NO_ERASE) },
++	{ "s25hs01gt",  INFO6(0x342b1b, 0x0f0390, 256 * 1024, 512, SPI_NOR_DUAL_READ |
++                    SPI_NOR_QUAD_READ | SPI_NOR_4B_OPCODES | USE_CLSR) },
+ };
+ 
+ static void spansion_post_sfdp_fixups(struct spi_nor *nor)
